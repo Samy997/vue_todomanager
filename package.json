@@ -1,14 +1,18 @@
 {
   "name": "vuex_crash_todomanager",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://samy997.github.io/vue_todomanager",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "vue": "^2.6.6"
+    "axios": "^0.18.0",
+    "vue": "^2.6.6",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
@@ -17,6 +21,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "gh-pages": "^2.0.1",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
