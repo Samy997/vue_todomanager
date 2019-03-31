@@ -12,9 +12,9 @@
         </div>
         <div class="todos">
             <div 
-                @dblclick="onDblClick(todo)" 
                 v-for="todo in allTodos" 
                 :key="todo.id" 
+                @dblclick="onDblClick(todo)" 
                 class="todo"
                 :class="{'is-complete':todo.completed}"
                 >
